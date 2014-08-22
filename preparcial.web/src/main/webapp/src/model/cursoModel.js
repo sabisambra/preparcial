@@ -35,6 +35,19 @@ define(['model/_cursoModel'], function() {
             if(!attrs.name){
                 validationMessage = "The name can't be empty.";
             }
+            else if(!attrs.programa){
+                validationMessage = "The course must belong to a degree";
+            }
+            else if(attrs.programa.length !== 4){
+                validationMessage = "The degree code must be 4 characters"; 
+            }
+            else if(attrs.programa.length === 4){
+                for(i=0;i<4;i++){
+                    if(attrs.programa[i]!==attrs.programa[i].toUpperCase()){
+                        validationMessage = "All the characters must be on upper case";
+                    }
+                }
+            }
             if(validationMessage.length>0){
                return validationMessage;
             }

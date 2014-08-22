@@ -35,6 +35,9 @@ define(['model/_estudianteModel'], function() {
             if(!attrs.name){
                 validationMessage = "The name can't be empty.";
             }
+            else if(parseInt(attrs.puntosCalidad)/parseInt(attrs.creditos)<3.25){
+                validationMessage = "The student must have a GPA over 3.25";
+            }
             if(validationMessage.length>0){
                return validationMessage;
             }
