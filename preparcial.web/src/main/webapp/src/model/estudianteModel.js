@@ -33,10 +33,10 @@ define(['model/_estudianteModel'], function() {
  	validate: function(attrs,options){
             var validationMessage = "";
             if(!attrs.name){
-                validationMessage = "The name can't be empty.";
+                validationMessage = "El nombre no puede ser vacio.";
             }
             else if(parseInt(attrs.puntosCalidad)/parseInt(attrs.creditos)<3.25){
-                validationMessage = "The student must have a GPA over 3.25";
+                validationMessage = "El estudiante debe tener un promedio por encima de 3.25";
             }
             if(validationMessage.length>0){
                return validationMessage;

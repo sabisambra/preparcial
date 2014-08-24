@@ -33,18 +33,18 @@ define(['model/_cursoModel'], function() {
  	validate: function(attrs,options){
             var validationMessage = "";
             if(!attrs.name){
-                validationMessage = "The name can't be empty.";
+                validationMessage = "El nombre no puede ser vacio.";
             }
             else if(!attrs.programa){
-                validationMessage = "The course must belong to a degree";
+                validationMessage = "El curso debe pertenecer a un programa";
             }
             else if(attrs.programa.length !== 4){
-                validationMessage = "The degree code must be 4 characters"; 
+                validationMessage = "El programa debe tener 4 caracteres"; 
             }
             else if(attrs.programa.length === 4){
                 for(i=0;i<4;i++){
                     if(attrs.programa[i]!==attrs.programa[i].toUpperCase()){
-                        validationMessage = "All the characters must be on upper case";
+                        validationMessage = "Todas las letras deben ser mayúsculas";
                     }
                 }
             }

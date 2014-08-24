@@ -40,6 +40,8 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
             this.toolbarModel.set('showPrint', false);
             this.toolbarModel.set('showSearch', false);
             this.toolbarModel.set('title', "Curso");
+            this.toolbarModel.set('saveName', "Guardar");
+            this.toolbarModel.set('cancelName', "Cancelar");
         }
     });
     return App.Component.CursoComponent;
