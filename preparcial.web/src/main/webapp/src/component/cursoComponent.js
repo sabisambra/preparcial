@@ -42,6 +42,9 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
             this.toolbarModel.set('title', "Curso");
             this.toolbarModel.set('saveName', "Guardar");
             this.toolbarModel.set('cancelName', "Cancelar");
+            this.addButton({name: "secciones", icon: "glyphicon-stats",}, function(){
+                self.componentController.mostrarSecciones();
+            });
         }
     });
     return App.Component.CursoComponent;
