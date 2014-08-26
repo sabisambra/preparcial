@@ -18,6 +18,8 @@
 		<td><%= htmlEncode(profesor.getDisplay('aniosExperiencia')) %></td>
 		<td><%= htmlEncode(profesor.getDisplay('numeroPublicaciones')) %></td>
 		<td><%= htmlEncode(profesor.getDisplay('fechaVinculacion')) %></td>
+                <td><a onclick="Backbone.trigger('<%= componentId %>-profesor-tipo',{aniosExperiencia:<%= htmlEncode(profesor.getDisplay('aniosExperiencia')) %>,numeroPublicaciones:<%= htmlEncode(profesor.getDisplay('numeroPublicaciones')) %>}); return false;" >Ver Tipo</a></td>
+
     <td>
     <% if(showEdit) {%>
     <a onclick="Backbone.trigger('<%= componentId %>-profesor-edit',{id:<%= profesor.id %>}); return false" >Editar</a> |

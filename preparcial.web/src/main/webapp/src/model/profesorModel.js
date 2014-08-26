@@ -35,6 +35,10 @@ define(['model/_profesorModel'], function() {
             if(!attrs.name){
                 validationMessage = "El nombre no puede ser vacio";
             }
+            else if(parseInt(attrs.aniosExperiencia)<5 )
+            {
+                validatioMessage = "El profesor debe tener minimo 5 años de experiencia."
+            }
             if(validationMessage.length>0){
                return validationMessage;
             }

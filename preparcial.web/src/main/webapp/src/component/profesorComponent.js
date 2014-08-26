@@ -35,6 +35,12 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
         controller : App.Controller.ProfesorController,
         postInit: function(){
             var self = this;
+            
+            Backbone.on(self.componentId+'-profesor-tipo', function(params)
+            {
+               self.componentController.tipo(params) ;
+            });
+            
             this.toolbarModel.set('createName', "Crear");
             this.toolbarModel.set('refreshName', "Refrescar");
             this.toolbarModel.set('showPrint', false);
