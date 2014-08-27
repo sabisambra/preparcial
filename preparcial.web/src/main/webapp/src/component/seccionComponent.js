@@ -37,7 +37,7 @@ define(['component/_CRUDComponent', 'controller/toolbarController', 'model/toolb
             var self = this;
             this.toolbarModel.set('createName', "Crear");
             this.toolbarModel.set('refreshName', "Refrescar");
-            this.toolbarModel.set('title', "Sección");
+            this.toolbarModel.set('title', "Seccion");
             this.toolbarModel.set('showPrint',false);
             this.toolbarModel.set('showSearch', false);
             this.toolbarModel.set('saveName', "Guardar");

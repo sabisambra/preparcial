@@ -44,7 +44,7 @@ define(['model/_cursoModel'], function() {
             else if(attrs.programa.length === 4){
                 for(i=0;i<4;i++){
                     if(attrs.programa[i]!==attrs.programa[i].toUpperCase()){
-                        validationMessage = "Todas las letras deben ser mayúsculas";
+                        validationMessage = "Todas las letras deben ser mayusculas";
                     }
                 }
             }

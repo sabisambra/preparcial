@@ -5,9 +5,9 @@
     <thead>
     <tr>
 		 <th>Nombre</th>
-		 <th>Años Experiencia</th>
-		 <th>Número Publicaciones</th>
-		 <th>Fecha Vinculación</th>
+		 <th>Anios Experiencia</th>
+		 <th>Numero Publicaciones</th>
+		 <th>Fecha Vinculacion</th>
     <th>Acciones</th>
     </tr>
     </thead>
@@ -46,15 +46,15 @@
     	<input type="text" class="form-control" id="name" name="name" placeholder="Escribir Nombre" value="<%= profesor.get('name') %>"/>	
 		</div>
 		<div class="form-group" >
-		<label for="aniosExperiencia">Años Experiencia</label>
+		<label for="aniosExperiencia">Anios Experiencia</label>
     	<input type="text" class="form-control" id="aniosExperiencia" name="aniosExperiencia" placeholder="Escribir años de experiencia" value="<%= profesor.get('aniosExperiencia') %>"/>	
 		</div>
 		<div class="form-group" >
-		<label for="numeroPublicaciones">Número Publicaciones</label>
+		<label for="numeroPublicaciones">Numero Publicaciones</label>
     	<input type="text" class="form-control" id="numeroPublicaciones" name="numeroPublicaciones" placeholder="Escribir Número de Publicaciones" value="<%= profesor.get('numeroPublicaciones') %>"/>	
 		</div>
 		<div class="form-group" >
-			<label for="fechaVinculacion">Fecha Vinculación</label>
+			<label for="fechaVinculacion">Fecha Vinculacion</label>
     		<input type="text" data-converter="date" data-date-format="dd/mm/yyyy" class="form-control" id="fechaVinculacion"  name="fechaVinculacion" placeholder="Enter value" />
     		<%= '<scr'+'ipt>' %>
         	$('#fechaVinculacion').datepicker({autoclose:true});
@@ -73,7 +73,7 @@
     <thead>
     <tr>
          <th>Nombre</th>
-         <th>Años de Experiencia</th>
+         <th>Anios de Experiencia</th>
     </tr>
     </thead>
     <tbody>

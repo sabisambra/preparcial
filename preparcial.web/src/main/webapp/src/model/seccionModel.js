@@ -36,7 +36,7 @@ define(['model/_seccionModel'], function() {
                 validationMessage = "El nombre no debe ser vacio.";
             }
             else if(!attrs.profesor_seccionId){
-                validationMessage = "La sección debe tener un profesor";
+                validationMessage = "La seccion debe tener un profesor";
             }
             if(validationMessage.length>0){
                return validationMessage;

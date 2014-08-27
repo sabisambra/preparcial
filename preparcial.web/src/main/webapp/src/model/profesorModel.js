@@ -37,7 +37,7 @@ define(['model/_profesorModel'], function() {
             }
             else if(parseInt(attrs.aniosExperiencia)<5 )
             {
-                validationMessage = "El profesor debe tener minimo 5 años de experiencia."
+                validationMessage = "El profesor debe tener minimo 5 anios de experiencia."
             }
             if(validationMessage.length>0){
                return validationMessage;
