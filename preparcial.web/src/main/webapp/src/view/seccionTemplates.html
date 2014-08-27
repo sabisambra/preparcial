@@ -20,6 +20,8 @@
 		<td><%= htmlEncode(seccion.getDisplay('salon')) %></td>
 		<td><%= htmlEncode(seccion.getDisplay('inscritos')) %></td>
 		<td><%= htmlEncode(seccion.getDisplay('profesor_seccionId')) %></td>
+                <td><a onclick="Backbone.trigger('<%= componentId %>-seccion-porcentaje-inscritos',{cupoMaximo:<%= htmlEncode(seccion.getDisplay('cupoMaximo')) %>,inscritos:<%= htmlEncode(seccion.getDisplay('inscritos')) %>}); return false;" >Ver Porcentaje Inscritos</a></td>
+
     <td>
     <% if(showEdit) {%>
     <a onclick="Backbone.trigger('<%= componentId %>-seccion-edit',{id:<%= seccion.id %>}); return false" >Editar</a> |
