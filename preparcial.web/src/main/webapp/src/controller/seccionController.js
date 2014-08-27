@@ -41,8 +41,7 @@ define(['controller/_seccionController','delegate/seccionDelegate'], function() 
             {
                 alert('El porcentaje de estudiantes inscritos en la sección es'+porIns+". La seccion esta extracreditada");
             }
-        },
-
+        }
     });
     return App.Controller.SeccionController;
 }); 

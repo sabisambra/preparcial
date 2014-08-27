@@ -66,9 +66,9 @@ define(['controller/_cursoController','delegate/cursoDelegate'], function() {
                         //Se itera sobre la variable elementos, que corresponden a la lista de modelos obtenida del servico REST getSports
                         _.each(elementos, function(d) {
                             //Se hace el cálculo del nuevo campo
-                            var average = "hella";
+                            var inscritos = ""//Aqui se calcula el numero de inscritos;
                             /*Ahora se instancia un SportPromModel, con un nuevo objeto JSON como parámetro como constructor (antes sportModel), extrayendo los datos de “d”.*/
-                            var model = new App.Model.verSeccionesModel({name: d.attributes.programa, average: average});
+                            var model = new App.Model.verSeccionesModel({name: d.attributes.name, inscritos: inscritos});
                             //y se agrega finalmente a los modelos prom de la lista.
                             self.verSeccionesModelList.models.push(model);
                         });

@@ -8,7 +8,7 @@ define(['model/verSeccionesModel'], function() {
     App.Model.verSeccionesModel = Backbone.Model.extend({
         defaults: {
          'name' : '',
-         'average' : ''
+         'inscritos' : ''
         },
         getDisplay: function(name) {
          return this.get(name);
